@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - registeryplate
+  - registryplate
+  - Character
+  - SenderTMP
+  - Button
+  - Controller
+  - Food
+  - Door
+  - WaitingArea
+  - Box
+  - myBox
+  - LeavingArea
+  - Mannequin
+  - DarkRoom
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Convai Char
+  - Water
+  - UI
+  - Teleport
+  - NoLight
+  - Manequin
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
