@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientIntensity: 0.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.41598436, g: 0.50117207, b: 0.7169812, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: e042e3a075d43734cb2151822f3efb89, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8b7dd0809c7c6498789fa32a61eaa6cb, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -20655,7 +20655,7 @@ Transform:
   m_GameObject: {fileID: 342115795}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.132, y: 0.611, z: -110.998}
+  m_LocalPosition: {x: 53.132, y: 1.03, z: -110.998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30290,8 +30290,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.37273407, y: 0.6418754, z: 0.42399597}
-  m_Center: {x: -0.032169342, y: 0.5125737, z: 0.23797607}
+  m_Size: {x: 0.37273407, y: 0.4894892, z: 0.41474152}
+  m_Center: {x: -0.032169342, y: 0.58876675, z: 0.23334885}
 --- !u!114 &534793338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94976,7 +94976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2021768926
 Transform:
   m_ObjectHideFlags: 0
@@ -94986,7 +94986,7 @@ Transform:
   m_GameObject: {fileID: 2021768925}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.8, y: -1.67, z: -0.3}
+  m_LocalPosition: {x: -1.8, y: 8.2, z: 21.7}
   m_LocalScale: {x: 16.066, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95027,8 +95027,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.8490566, g: 0.84158146, b: 0.7969918, a: 1}
-  m_Intensity: 300
-  m_Range: 100
+  m_Intensity: 200
+  m_Range: 150
   m_SpotAngle: 153.19353
   m_InnerSpotAngle: 84.196976
   m_CookieSize: 10
@@ -114206,7 +114206,7 @@ PrefabInstance:
     - target: {fileID: 8171223174677216831, guid: 21f41c09f8e7a44829f823491bcec1b7,
         type: 3}
       propertyPath: m_Intensity
-      value: 400
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8171223174677216831, guid: 21f41c09f8e7a44829f823491bcec1b7,
         type: 3}
