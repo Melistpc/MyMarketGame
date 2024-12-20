@@ -51410,7 +51410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d65210de6fc68449b2df5ceb5e41603, type: 2}
+  - {fileID: 2100000, guid: 7a3e3fe07ad7943c9bc92c4981e6c781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66105,7 +66105,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d65210de6fc68449b2df5ceb5e41603, type: 2}
+  - {fileID: 2100000, guid: 7a3e3fe07ad7943c9bc92c4981e6c781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74541,8 +74541,8 @@ Transform:
   m_GameObject: {fileID: 1532491009}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.41, y: -11.17, z: 10.77}
-  m_LocalScale: {x: 27.63458, y: 30.991014, z: 0.64256}
+  m_LocalPosition: {x: -10.2505, y: -11.17, z: 10.77}
+  m_LocalScale: {x: 51.839413, y: 30.991014, z: 0.64256}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1158170174}
@@ -86370,7 +86370,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_TeleportationProvider: {fileID: 0}
+  m_TeleportationProvider: {fileID: 366418773}
   m_MatchOrientation: 0
   m_MatchDirectionalInput: 0
   m_TeleportTrigger: 0
