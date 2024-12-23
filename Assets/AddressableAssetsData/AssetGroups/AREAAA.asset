@@ -35,6 +35,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - area
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30c5e465dc21c534bada8d020bae91f4
+    m_Address: Assets/Food Pack-Demo/Materials/Base color.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b133b755a13992d4e820112f19c845cc
+    m_Address: Assets/Food Pack-Demo/Materials/Glass.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee6311e667feb2848a84578e9c3bf6b4
+    m_Address: Assets/Low-Poly Medieval Market/Materials/Meat market.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8444303dee6f21e4c943696eae671249
+    m_Address: Assets/Low-Poly Medieval Market/Materials/Bakery matket.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 77741a3f89ffc47c5b4c1a5cc91baf0e, type: 2}
   m_SchemaSet:
