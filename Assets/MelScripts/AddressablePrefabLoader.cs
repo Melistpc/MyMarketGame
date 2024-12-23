@@ -7,52 +7,55 @@ public class AddressablePrefabLoader : MonoBehaviour
 {
     [Header("Prefab Loading Settings")]
     [Tooltip("The label for the prefab group in Addressables.")]
-    [SerializeField] private string prefabLabel = "prefabLabel"; // The label for the prefab group
+    [SerializeField] private string prefabLabel = "area"; // The label for the prefab group
 
     [Header("Prefab Instantiation Settings")]
-    [Tooltip("The position at which to instantiate the loaded prefab.")]
+    [Tooltip("The position at which to instantiate the loaded prefabs.")]
     [SerializeField] private Vector3 instantiationPosition = Vector3.zero; // Position to instantiate prefab
 
     [Header("Debugging Settings")]
     [Tooltip("Enable to log additional debugging information.")]
     [SerializeField] private bool enableDebugLogs = true; // Whether to log additional debug information
 
-    private AsyncOperationHandle<GameObject> handle; // Handle for the loaded prefab
+    private AsyncOperationHandle<IList<GameObject>> handle; // Handle for the loaded prefabs
 
     private void Start()
     {
         if (enableDebugLogs)
             Debug.Log("Starting AddressablePrefabLoader...");
 
-        // Load the prefab and its dependencies
-        LoadPrefab(prefabLabel);
+        // Load all prefabs by label and their dependencies
+        LoadPrefabs(prefabLabel);
     }
 
-    private void LoadPrefab(string label)
+    private void LoadPrefabs(string label)
     {
-        // Load the prefab and its dependencies asynchronously
-        handle = Addressables.LoadAssetAsync<GameObject>(label);
-        handle.Completed += OnPrefabLoaded;
+        // Load all prefabs asynchronously by label (returns a list)
+        handle = Addressables.LoadAssetsAsync<GameObject>(label, null);
+        handle.Completed += OnPrefabsLoaded;
     }
 
-    private void OnPrefabLoaded(AsyncOperationHandle<GameObject> loadHandle)
+    private void OnPrefabsLoaded(AsyncOperationHandle<IList<GameObject>> loadHandle)
     {
         if (loadHandle.Status == AsyncOperationStatus.Succeeded)
         {
-            // Prefab loaded successfully
-            GameObject prefab = loadHandle.Result;
+            // Prefabs loaded successfully
+            IList<GameObject> prefabs = loadHandle.Result;
 
             if (enableDebugLogs)
-                Debug.Log($"Prefab loaded: {prefab.name}");
+                Debug.Log($"Loaded {prefabs.Count} prefabs with label: {prefabLabel}");
 
-            // Instantiate the prefab in the scene
-            InstantiatePrefab(prefab);
+            // Instantiate each prefab in the scene
+            foreach (var prefab in prefabs)
+            {
+                InstantiatePrefab(prefab);
+            }
         }
         else
         {
-            // If there was an issue loading the prefab
+            // If there was an issue loading the prefabs
             if (enableDebugLogs)
-                Debug.LogError($"Failed to load prefab with label: {prefabLabel}");
+                Debug.LogError($"Failed to load prefabs with label: {prefabLabel}");
         }
     }
 
@@ -78,6 +81,6 @@ public class AddressablePrefabLoader : MonoBehaviour
         Addressables.Release(handle);
 
         if (enableDebugLogs)
-            Debug.Log("Released Addressable asset.");
+            Debug.Log("Released Addressable assets.");
     }
 }

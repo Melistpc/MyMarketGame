@@ -10,26 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: OnlyScene
+  m_Name: AREAAA
   m_EditorClassIdentifier: 
-  m_GroupName: OnlyScene
+  m_GroupName: AREAAA
   m_Data:
     m_SerializedData: []
-  m_GUID: 414c16c25747c4c4d8268f21be69e9e3
+  m_GUID: 99c6a36ed530c422eb7cb96ff8b84d64
   m_SerializeEntries:
-  - m_GUID: 42fda1885723b47409f93aa4bf730713
-    m_Address: Assets/Hierarchyprefabs
+  - m_GUID: 076ee1d9fabce4636be8fba98c89074a
+    m_Address: Assets/MYAREA/Directional Light.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - area
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3e6d6c4c1961f497fb115192bb977d07
-    m_Address: Assets/Hierarchyprefabs/Bat.prefab
+  - m_GUID: 139a0776dc2d14647b96c115ce395267
+    m_Address: Assets/MYAREA/XR Interaction Manager.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - area
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67df690ae63084bf98efee27af9853a2
+    m_Address: Assets/MYAREA/AREA 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - area
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 77741a3f89ffc47c5b4c1a5cc91baf0e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: e37ab20f8309f4dcfb8169a94dc91fdb, type: 2}
-    - {fileID: 11400000, guid: 1d51094a93a774aa29f7f16f02dcb7a2, type: 2}
+    - {fileID: 11400000, guid: 0bae6a9d750e04cd2b7386a6288f88b1, type: 2}
+    - {fileID: 11400000, guid: b94b7cfcf5d3e41d592b206e2d276d8a, type: 2}

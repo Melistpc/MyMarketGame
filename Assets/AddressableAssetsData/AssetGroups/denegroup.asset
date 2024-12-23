@@ -10,26 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: OnlyScene
+  m_Name: denegroup
   m_EditorClassIdentifier: 
-  m_GroupName: OnlyScene
+  m_GroupName: denegroup
   m_Data:
     m_SerializedData: []
-  m_GUID: 414c16c25747c4c4d8268f21be69e9e3
+  m_GUID: 16fabc57e84d24b628121bdb30380b6d
   m_SerializeEntries:
-  - m_GUID: 42fda1885723b47409f93aa4bf730713
-    m_Address: Assets/Hierarchyprefabs
+  - m_GUID: ddc68b48fc58f490bbad5ba16ab99ac9
+    m_Address: Assets/Hierarchyprefabs/XR Origin (XR Rig) (1).prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3e6d6c4c1961f497fb115192bb977d07
-    m_Address: Assets/Hierarchyprefabs/Bat.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - prefabLabel
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 77741a3f89ffc47c5b4c1a5cc91baf0e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: e37ab20f8309f4dcfb8169a94dc91fdb, type: 2}
-    - {fileID: 11400000, guid: 1d51094a93a774aa29f7f16f02dcb7a2, type: 2}
+    - {fileID: 11400000, guid: ecdc5e08746bf47268ec966c5e152656, type: 2}
+    - {fileID: 11400000, guid: 10b6c8995e71f41a18c242145ca0129b, type: 2}

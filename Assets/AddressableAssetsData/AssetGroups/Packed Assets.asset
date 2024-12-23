@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 128d4a68886ee48c6a80f6bbbe015c0e
+  m_SerializeEntries:
+  - m_GUID: aeb21fc1c0177430f82566877f5991db
+    m_Address: Assets/Hierarchyprefabs/CCTVcamera.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e352c1855acc401ca599f524dfd3bb2
+    m_Address: Assets/Hierarchyprefabs/Cheese (2).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30ee4953d813349a29e2f2b9e91c0311
+    m_Address: Assets/Hierarchyprefabs/desk.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2efc4e2e305cb442a8c0cb0e2975144f
+    m_Address: Assets/Hierarchyprefabs/Directional Light.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d665f0750faa94ddcb12ce4081c246a9
+    m_Address: Assets/Hierarchyprefabs/display.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25f95cfa11cf147c1a4f1ee6bfae25e9
+    m_Address: Assets/Hierarchyprefabs/display.002.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea48bd290240d46b7905e2b31ff49378
+    m_Address: Assets/Hierarchyprefabs/Drawer Table Long White Wood Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d18c0b76fe3a47078879037f5a26775
+    m_Address: Assets/Hierarchyprefabs/Elevator.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5477782584b6f4a008f0881ae44bf245
+    m_Address: Assets/Hierarchyprefabs/Elevator2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 084098c62406b4847bb13b181b4cc687
+    m_Address: Assets/Hierarchyprefabs/EventSystem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1af8169ebbc5d4b1d8d55f701091dd6b
+    m_Address: Assets/Hierarchyprefabs/HOME.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf8f602ab36f049b09fa68c602aecdb1
+    m_Address: Assets/Hierarchyprefabs/House.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eef5bf9cf194540a1a87e5eef77503e3
+    m_Address: Assets/Hierarchyprefabs/LeavingArea.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ae0cfc9f72b645c3bc17ce761d5591a
+    m_Address: Assets/Hierarchyprefabs/Locomotion System.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e52328e91e3d48ee93ad171238996a3
+    m_Address: Assets/Hierarchyprefabs/Manequin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 00df5fee9f32e494b84fa33181eee7d3
+    m_Address: Assets/Hierarchyprefabs/MARKET.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa9a936a7d9e6493d921d82a0d7ad684
+    m_Address: Assets/Hierarchyprefabs/mybox.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f97a98f9b097b49beb8ed1e7aa0bf8c7
+    m_Address: Assets/Hierarchyprefabs/Office 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45cb3b089d40d420d9c5eb47d32dedac
+    m_Address: Assets/Hierarchyprefabs/panel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88f30c4be0d9b44ecb1f09650a7479fb
+    m_Address: Assets/Hierarchyprefabs/panel (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2435bab82086347e79128b4cd8788224
+    m_Address: Assets/Hierarchyprefabs/PARKING.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3494f4484a1eb48e18ce78cab993cc25
+    m_Address: Assets/Hierarchyprefabs/PARKING (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 126b463267f1440c5946dcc08ec0c3b5
+    m_Address: Assets/Hierarchyprefabs/pointLight market.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0e429fe2c0924cb6a1c3747941b875b
+    m_Address: Assets/Hierarchyprefabs/server_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49ec09a51338541199430e67f7355401
+    m_Address: Assets/Hierarchyprefabs/server_2 (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d21da1b56a98f42faac02bb5497f2652
+    m_Address: Assets/Hierarchyprefabs/SkelMesh_Bodyguard_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 265b3573a94a1426b8878265edbb3d3e
+    m_Address: Assets/Hierarchyprefabs/storage_building.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe51900f2660d4b6ab07147da27af827
+    m_Address: Assets/Hierarchyprefabs/Teleportation Area (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83d2187ca4f2440769978f5564b4c0ab
+    m_Address: Assets/Hierarchyprefabs/Teleportation Area (2).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e66edf6aa714440ab1136a9fed409fa
+    m_Address: Assets/Hierarchyprefabs/Teleportation Area (3).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b95f6937ea4b46a3a97ebaabb838749
+    m_Address: Assets/Hierarchyprefabs/TV.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2dab809c5f4f4832b4ec704bafc42ea
+    m_Address: Assets/Hierarchyprefabs/WaitingArea.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cffc8a329fa9d41f687aa91cad887bbc
+    m_Address: Assets/Hierarchyprefabs/XR Interaction Manager.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - prefabLabel
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 77741a3f89ffc47c5b4c1a5cc91baf0e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: aa488882d77844b33ac3ed558e9bc4f3, type: 2}
+    - {fileID: 11400000, guid: e073986294087471582abde04f12edde, type: 2}

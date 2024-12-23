@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: 414c16c25747c4c4d8268f21be69e9e3
+  m_DefaultGroup: 16fabc57e84d24b628121bdb30380b6d
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 5f503e8287cc3f55fdbcb7ed6bd7d69f
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -47,6 +47,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 80d5fbc9ba50d495e9d8b2d36c984c3d, type: 2}
   - {fileID: 11400000, guid: e6a98a9e3997848c8a81103e67f451d8, type: 2}
   - {fileID: 11400000, guid: 96d9c4642dd7945a7b751c3b8a5c84d7, type: 2}
+  - {fileID: 11400000, guid: 5e4f58e37f85d4ca58590ac32f2ba172, type: 2}
+  - {fileID: 11400000, guid: a8c594b4eef5d4471a460086a8c492f9, type: 2}
+  - {fileID: 11400000, guid: 6e20a8c97598247cd8dacb61d0c95ad3, type: 2}
+  - {fileID: 11400000, guid: 8d4baf412e4cd49c1a36423255ed472c, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -90,6 +94,9 @@ MonoBehaviour:
     - default
     - usedassetlabel
     - prefabLabel
+    - prefebdene
+    - Dympref
+    - area
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: cd4141fb7ef8f42f0a04b8f819a4a984, type: 2}

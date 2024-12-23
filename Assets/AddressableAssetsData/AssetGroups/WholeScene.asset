@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: WholeScene
+  m_EditorClassIdentifier: 
+  m_GroupName: WholeScene
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1e781fae2f53f428989a5c3157f619bc
+  m_SerializeEntries:
+  - m_GUID: 9173ca2334f054305ac825a7cf21c156
+    m_Address: Assets/DynamicSceneAssetfolder/XR Origin (XR Rig) (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e44cab82068844e8a1d7be0a79f5aec
+    m_Address: Assets/DynamicSceneAssetfolder/Office 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25b11affced1f4473870bd7f94956396
+    m_Address: Assets/DynamicSceneAssetfolder/House.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14ae8ecb59e98420396a5b5f54027dc9
+    m_Address: Assets/DynamicSceneAssetfolder/EventSystem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cfd3d87e0fe84e5d92b1779f664a190
+    m_Address: Assets/DynamicSceneAssetfolder/Directional Light.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d37f43d9cc2ab4a8b89965250b9d6cd1
+    m_Address: Assets/DynamicSceneAssetfolder/XR Interaction Manager.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 384d527dd8a7e4105a80547ebf9e3733
+    m_Address: Assets/DynamicSceneAssetfolder/HOME.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1f17b114b23749f5a9fc5426af89d23
+    m_Address: Assets/DynamicSceneAssetfolder/MARKET.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dympref
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 77741a3f89ffc47c5b4c1a5cc91baf0e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c24d2fc19b03e4a379222227d7485b57, type: 2}
+    - {fileID: 11400000, guid: 955a2cfd6d4114291b34739b16f3ee18, type: 2}
