@@ -5,37 +5,20 @@ using System.Collections.Generic;
 
 public class AssetGroupLoader : MonoBehaviour
 {
-    [Tooltip("Label assigned to the assets in Addressables.")]
     public string label = "usedassetlabel"; // Label for the group you want to load
+    private AsyncOperationHandle<IList<Object>> loadedHandle;
 
     private void Start()
     {
-        // Start by downloading dependencies for smoother loading
-        PreloadDependencies(label);
-    }
-
-    private void PreloadDependencies(string label)
-    {
-        Debug.Log($"Downloading dependencies for assets labeled: {label}");
-        Addressables.DownloadDependenciesAsync(label).Completed += handle =>
-        {
-            if (handle.Status == AsyncOperationStatus.Succeeded)
-            {
-                Debug.Log($"Dependencies for {label} downloaded successfully!");
-                // Load the assets after dependencies are downloaded
-                LoadAssetsByLabel(label);
-            }
-            else
-            {
-                Debug.LogError($"Failed to download dependencies for {label}");
-            }
-        };
+        Debug.Log("Starting AssetGroupLoader...");
+        LoadAssetsByLabel(label);
     }
 
     private void LoadAssetsByLabel(string label)
     {
         Debug.Log($"Loading assets with label: {label}");
-        Addressables.LoadAssetsAsync<Object>(label, null).Completed += OnAssetsLoaded;
+        loadedHandle = Addressables.LoadAssetsAsync<Object>(label, null);
+        loadedHandle.Completed += OnAssetsLoaded;
     }
 
     private void OnAssetsLoaded(AsyncOperationHandle<IList<Object>> handle)
@@ -45,7 +28,7 @@ public class AssetGroupLoader : MonoBehaviour
             Debug.Log($"Successfully loaded {handle.Result.Count} assets with label: {label}");
             foreach (var asset in handle.Result)
             {
-                Debug.Log($"Loaded asset: {asset.name}");
+                Debug.Log($"Loaded asset: {asset.name} ({asset.GetType()})");
                 HandleAsset(asset);
             }
         }
@@ -57,33 +40,62 @@ public class AssetGroupLoader : MonoBehaviour
 
     private void HandleAsset(Object asset)
     {
-        // Example: Handle different asset types
-        if (asset is GameObject)
+        if (asset is GameObject prefab)
         {
-            // Instantiate GameObject prefabs
-            Instantiate(asset as GameObject);
-            Debug.Log($"Instantiated prefab: {asset.name}");
-        }
-        else if (asset is Texture)
-        {
-            // Example: Log a message for loaded textures
-            Debug.Log($"Loaded texture: {asset.name}");
-        }
-        else if (asset is Material)
-        {
-            // Example: Log a message for loaded materials
-            Debug.Log($"Loaded material: {asset.name}");
+            Debug.Log($"Instantiating prefab: {prefab.name}");
+            var instance = Instantiate(prefab);
+
+            // Log initial transform values
+            Debug.Log($"Object {prefab.name} initial position: {instance.transform.position}, scale: {instance.transform.localScale}, rotation: {instance.transform.rotation.eulerAngles}");
+
+            ValidateAndFixTransform(instance);
         }
         else
         {
-            Debug.Log($"Unhandled asset type: {asset.GetType()}");
+            Debug.Log($"Unhandled asset type: {asset.GetType()} for asset {asset.name}");
         }
+    }
+
+    private void ValidateAndFixTransform(GameObject obj)
+    {
+        // Check if the position, rotation, and scale are valid
+        if (!IsFinite(obj.transform.position))
+        {
+            Debug.LogWarning($"Object {obj.name} has invalid position {obj.transform.position}. Resetting to Vector3.zero.");
+            obj.transform.position = Vector3.zero;
+        }
+
+        if (!IsFinite(obj.transform.localScale) || obj.transform.localScale == Vector3.zero)
+        {
+            Debug.LogWarning($"Object {obj.name} has invalid scale {obj.transform.localScale}. Resetting to Vector3.one.");
+            obj.transform.localScale = Vector3.one;
+        }
+
+        if (!IsFinite(obj.transform.rotation.eulerAngles))
+        {
+            Debug.LogWarning($"Object {obj.name} has invalid rotation {obj.transform.rotation.eulerAngles}. Resetting to Quaternion.identity.");
+            obj.transform.rotation = Quaternion.identity;
+        }
+
+        // Optionally, check if the object has a Rigidbody component and set it to kinematic if it does
+        if (obj.TryGetComponent<Rigidbody>(out var rb))
+        {
+            rb.isKinematic = true;
+            Debug.Log($"Set Rigidbody to kinematic for {obj.name}");
+        }
+    }
+
+    private bool IsFinite(Vector3 vector)
+    {
+        return float.IsFinite(vector.x) && float.IsFinite(vector.y) && float.IsFinite(vector.z);
     }
 
     private void OnDestroy()
     {
-        // Optionally release assets when no longer needed
-        Addressables.Release(label);
-        Debug.Log($"Released assets for label: {label}");
+        if (loadedHandle.IsValid())
+        {
+            Addressables.Release(loadedHandle);
+            Debug.Log($"Released Addressables handle for label: {label}");
+        }
     }
 }

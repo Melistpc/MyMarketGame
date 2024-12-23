@@ -18,283 +18,283 @@ MonoBehaviour:
   m_GUID: f7df7db8fa9214819ab2deaedf798a33
   m_SerializeEntries:
   - m_GUID: 5fa5d927dbfd1463182a6054be809559
-    m_Address: Assets/01_AssetStore
+    m_Address: 01_AssetStore
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 761569eafab2046d5bee5355d905774b
-    m_Address: Assets/AllSkyFree
+    m_Address: AllSkyFree
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f715c1c7a5fe34856b73d9d95e421b36
-    m_Address: Assets/Aformycctv
+    m_Address: Aformycctv
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2f0e8288fb7a54fddb6c940a1ffb00e0
-    m_Address: Assets/Assets_StorageBuilding
+    m_Address: Assets_StorageBuilding
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 264e7dec3a3fa4d15a319a703eab70fb
-    m_Address: Assets/Azerilo
+    m_Address: Azerilo
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9a935abdfd5ed482f8de39d232dfda8d
-    m_Address: Assets/BackgroundCars
+    m_Address: BackgroundCars
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 24e6d70d81966cf4eb9d38e7e780ccf9
-    m_Address: Assets/BasicBedroomPack-Mavi3D
+    m_Address: BasicBedroomPack-Mavi3D
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 28013cbc7d5fb4d2199e89fdae402257
-    m_Address: Assets/BodyGuards
+    m_Address: BodyGuards
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2cf646d323db34ad79041bb1e8e9796c
-    m_Address: Assets/CoffeeShopStarterPack
+    m_Address: CoffeeShopStarterPack
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ad71ff0e38142314d85b21f1073a2a12
-    m_Address: Assets/FastMesh
+    m_Address: FastMesh
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4e274432eec7547e98cbc7e0553d7f45
-    m_Address: Assets/Flashlight
+    m_Address: Flashlight
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0b1f216b61c2140bab85a2d316e56bce
-    m_Address: Assets/Fonts
+    m_Address: Fonts
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3554abb54defe6c42a073afa335cf051
-    m_Address: Assets/Food Pack Mixed
+    m_Address: Food Pack Mixed
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a919a425406d543bba3a7f0e0301020a
-    m_Address: Assets/Food Pack-Demo
+    m_Address: Food Pack-Demo
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5d8b9cd43c9b5284890199f1b243f492
-    m_Address: Assets/Food_FREE
+    m_Address: Food_FREE
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 75d1d23299ee85340baa89a2d22ad26e
-    m_Address: Assets/Fresh_Raystore
+    m_Address: Fresh_Raystore
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4a3046b7cd7395d4dae68ca554186a2e
-    m_Address: Assets/Furniture_FREE
+    m_Address: Furniture_FREE
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b59d5511e773147deb13b41994781819
-    m_Address: Assets/GeniusCrate_Games
+    m_Address: GeniusCrate_Games
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8e06809b51d0b4fa599d1b51e2561703
-    m_Address: Assets/iPoly3D
+    m_Address: iPoly3D
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 94794b059ee0add4ea709284bca28b0b
-    m_Address: Assets/Kabungus
+    m_Address: Kabungus
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 983f8481995334dd2a118c7949a04743
-    m_Address: Assets/Kevin Iglesias
+    m_Address: Kevin Iglesias
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fb1e3f00708394cb5b0d37dd430445cb
-    m_Address: Assets/KitchenFurnitureStarterPack-Mavi3D
+    m_Address: KitchenFurnitureStarterPack-Mavi3D
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6325f1e39bfbf4c9b95fdce61a05bcdf
-    m_Address: Assets/Ladymito
+    m_Address: Ladymito
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 60b972a57b6190946a2af2a5856ee910
-    m_Address: Assets/Lets Make a VR Game
+    m_Address: Lets Make a VR Game
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 152662971e5c6244e947b44be47bd5f7
-    m_Address: Assets/Low-Poly Medieval Market
+    m_Address: Low-Poly Medieval Market
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c5aeca8bb9dd84613a657bbf49073561
-    m_Address: Assets/MelPrefabs
+    m_Address: MelPrefabs
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6d2d6ab564bbb4ba9b1d1d7a0d642a37
-    m_Address: Assets/melscenes
+    m_Address: melscenes
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 67fa0b0841e434db7aa483ccf64a0a50
-    m_Address: Assets/MelScripts
+    m_Address: MelScripts
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 46cf5b567fce14af0ad5fac6d1600def
-    m_Address: Assets/melsound
+    m_Address: melsound
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6653ddc90d26b43f2bb2331b0e9dae6e
-    m_Address: Assets/Models
+    m_Address: Models
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b210f2467df864b13ba72db78125ccb8
-    m_Address: Assets/Modern Archviz Leafless
+    m_Address: Modern Archviz Leafless
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 86938a8b70d4344dc9967f554ce436a6
-    m_Address: Assets/Old_Radio
+    m_Address: Old_Radio
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4304357f5bf454b47a57ccc00a2a6188
-    m_Address: Assets/Phoenix3D
+    m_Address: Phoenix3D
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e31f8dae3a86b4957b875e9b0167c0a8
-    m_Address: Assets/PieShop
+    m_Address: PieShop
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5dc5e6e2f9f76404da16a23d2894b509
-    m_Address: Assets/Prefabs
+    m_Address: Prefabs
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0d6dfe4a288814183aa3457a49d0d7cb
-    m_Address: Assets/Ready Player Me
+    m_Address: Ready Player Me
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ac2d36cb0f19b494ab43d05130780965
-    m_Address: Assets/RPG Food & Drinks Pack
+    m_Address: RPG Food & Drinks Pack
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e3327327d34ca4019a6c25e240c7213c
-    m_Address: Assets/Samples
+    m_Address: Samples
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b52b4080c557e4641a74caf5af54ad67
-    m_Address: Assets/Sci-Fi Styled Modular Pack
+    m_Address: Sci-Fi Styled Modular Pack
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 28e6627c2fa514d1dabfd219c103d79c
-    m_Address: Assets/ScifiOfficeLite
+    m_Address: ScifiOfficeLite
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7b4812e0014c4314856242e460c0845
-    m_Address: Assets/Scripts
+    m_Address: Scripts
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 709f11a7f3c4041caa4ef136ea32d874
-    m_Address: Assets/Settings
+    m_Address: Settings
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 07c1448297d5143d6b9dfbcbb7100982
-    m_Address: Assets/Simple Foods
+    m_Address: Simple Foods
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99173c697c5d848f79866d61b308a3f1
-    m_Address: Assets/SocketsAndSwitches
+    m_Address: SocketsAndSwitches
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f54d1bd14bd3ca042bd867b519fee8cc
-    m_Address: Assets/TextMesh Pro
+    m_Address: TextMesh Pro
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ad40cb6d2750c402687d03f50eb7fd63
-    m_Address: Assets/XR
+    m_Address: XR
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c752a23254f964e8f80f7799c5bbd2b2
-    m_Address: Assets/XRI
+    m_Address: XRI
     m_ReadOnly: 0
     m_SerializedLabels:
     - usedassetlabel

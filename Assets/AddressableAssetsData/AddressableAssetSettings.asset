@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: f7df7db8fa9214819ab2deaedf798a33
+  m_DefaultGroup: 414c16c25747c4c4d8268f21be69e9e3
   m_currentHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_GroupAssets:
   - {fileID: 11400000, guid: 80d5fbc9ba50d495e9d8b2d36c984c3d, type: 2}
   - {fileID: 11400000, guid: e6a98a9e3997848c8a81103e67f451d8, type: 2}
+  - {fileID: 11400000, guid: 96d9c4642dd7945a7b751c3b8a5c84d7, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -88,6 +89,7 @@ MonoBehaviour:
     m_LabelNames:
     - default
     - usedassetlabel
+    - prefabLabel
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: cd4141fb7ef8f42f0a04b8f819a4a984, type: 2}
