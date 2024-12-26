@@ -15,7 +15,7 @@ public class NewAgent : MonoBehaviour
 
     private NavMeshAgent agent;
     private bool isExiting = false; // Indicates if the agent is exiting the area
-
+    private bool isWaiting = false; // Indicates if the agent is waiting for payment
     private float timer;
 
     // Variables to track collected items
@@ -25,7 +25,7 @@ public class NewAgent : MonoBehaviour
 
     private GameObject box; // Reference to the box to drop items
     private GameObject waitingArea; // Reference to the waiting area
-    private bool isWaiting = false; // Indicates if the agent is waiting for payment
+    private static Queue<NewAgent> npcQueue = new Queue<NewAgent>(); // Queue to manage NPCs
 
     void OnEnable()
     {
@@ -49,38 +49,37 @@ public class NewAgent : MonoBehaviour
         }
     }
 
-   void Update()
-{
-    // Skip behavior if the agent is waiting or exiting
-    if (isWaiting || isExiting) return;
-
-    // If the agent has collected the maximum number of items, move to the box
-    if (totalCollectedItems >= maxItems)
+    void Update()
     {
-        MoveToBox();
-        return; // Skip the rest of the update when moving to the box
-    }
+        // Skip behavior if the agent is waiting or exiting
+        if (isWaiting || isExiting) return;
 
-    // Wandering logic
-    timer += Time.deltaTime;
-    if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
-    {
-        if (timer >= wanderTimer)
+        // If the agent has collected the maximum number of items, move to the box
+        if (totalCollectedItems >= maxItems)
         {
-            Vector3 newPos = NewAgent.RandomNavSphere(transform.position, wanderRadius, -1);
-            agent.SetDestination(newPos);
+            StartCoroutine(MoveToBox()); // Start moving to the box
+            return; // Skip the rest of the update when moving to the box
+        }
+
+        // Wandering logic
+        timer += Time.deltaTime;
+        if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
+        {
+            if (timer >= wanderTimer)
+            {
+                Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+                agent.SetDestination(newPos);
+                timer = 0;
+            }
+        }
+        else
+        {
             timer = 0;
         }
-    }
-    else
-    {
-        timer = 0;
-    }
 
-    // Check for items to collect
-    CheckForItems();
-}
-
+        // Check for items to collect
+        CheckForItems();
+    }
 
     private void CheckForItems()
     {
@@ -123,7 +122,7 @@ public class NewAgent : MonoBehaviour
         }
     }
 
-    private void MoveToBox()
+    private IEnumerator MoveToBox()
     {
         if (box != null)
         {
@@ -134,13 +133,15 @@ public class NewAgent : MonoBehaviour
             if (agent.destination != stopPosition)
             {
                 agent.SetDestination(stopPosition);
-                Debug.Log("Moving to a position near the box to drop items...");
+                Debug.Log("Moving to a position near the box...");
             }
 
-            if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
+            while (agent.remainingDistance > agent.stoppingDistance || agent.pathPending)
             {
-                StartCoroutine(DropItemsOneByOne());
+                yield return null; // Wait until the NPC reaches the stop position
             }
+
+            StartCoroutine(DropItemsOneByOne());
         }
         else
         {
@@ -189,6 +190,7 @@ public class NewAgent : MonoBehaviour
                 anim.SetBool("isPay", true);
             }
             isWaiting = true;
+            npcQueue.Enqueue(this); // Add NPC to the queue
             Debug.Log("Moving to waiting area...");
         }
         else
@@ -197,17 +199,29 @@ public class NewAgent : MonoBehaviour
         }
     }
 
-   public void LeaveWaitingArea(Vector3 leavingAreaPosition)
-{
-    isWaiting = false;
-    isExiting = true; // Set exiting flag to true
-    if (anim != null)
+    public void LeaveWaitingArea(Vector3 leavingAreaPosition)
     {
-        anim.SetBool("isPay", false);
+        // NPC leaves the waiting area with the given position
+        if (npcQueue.Peek() == this) // Only the first NPC in the queue can leave
+        {
+            isWaiting = false;
+            isExiting = true;
+            if (anim != null)
+            {
+                anim.SetBool("isPay", false);
+            }
+
+            agent.SetDestination(leavingAreaPosition); // Use the passed argument (leaving area position)
+            npcQueue.Dequeue(); // Remove from queue
+            Debug.Log("NPC has left the waiting area...");
+
+            // Start next NPC in the queue
+            if (npcQueue.Count > 0)
+            {
+                npcQueue.Peek().StartCoroutine(npcQueue.Peek().MoveToBox()); // Next NPC starts their behavior
+            }
+        }
     }
-    agent.SetDestination(leavingAreaPosition);
-    Debug.Log("Leaving waiting area...");
-}
 
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
